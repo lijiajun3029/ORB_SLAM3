@@ -146,6 +146,14 @@ add_executable(rgbd_tum
         Examples/RGB-D/rgbd_tum.cc)
 target_link_libraries(rgbd_tum ${PROJECT_NAME})
 
+add_executable(rgbd_tum_semantic
+        Examples/RGB-D/rgbd_tum_semantic.cc)
+target_link_libraries(rgbd_tum_semantic ${PROJECT_NAME})
+
+add_executable(osa_viz
+        Examples/RGB-D/osa_viz.cc)
+target_link_libraries(osa_viz ${PROJECT_NAME})
+
 if(realsense2_FOUND)
     add_executable(rgbd_realsense_D435i
             Examples/RGB-D/rgbd_realsense_D435i.cc)
